@@ -26,7 +26,11 @@ var tokenListSchema = new Schema({
   atl_date: Date,
   status: String,
   buy_price: Number,
-  sell_price: Number
+  sell_price: Number,
+  score: {
+    type: Number,
+    default: Number.POSITIVE_INFINITY
+  }
 }, {
   timestamps: true
 });
